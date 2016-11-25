@@ -201,11 +201,11 @@ void NVIC_Configuration(void)
 	NVIC_Init(&NVIC_InitStructure);
 	
 	/*UART1*/
-//	NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
-//	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 2;
-//	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 2;
-//	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-//	NVIC_Init(&NVIC_InitStructure);
+	NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 2;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 2;
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	NVIC_Init(&NVIC_InitStructure);
 	
 	/*UART2*/
 	NVIC_InitStructure.NVIC_IRQChannel = USART2_IRQn;
@@ -299,7 +299,7 @@ void  Chip_Init(void)
 	//I2C_Configuration();
 
     //初始化UART
-	//USART1_Configuration();
+	USART1_Configuration();
 
 	//初始化NVIC
 	NVIC_Configuration();

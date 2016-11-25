@@ -27,6 +27,7 @@ void delay_dds(int length)
     	length--;
 }
 
+#if 0
 void *memcpy(void *s1, const void *s2, unsigned char n)
 {
 	unsigned char *cs1 = s1; 
@@ -36,6 +37,7 @@ void *memcpy(void *s1, const void *s2, unsigned char n)
 		*cs1++ = *cs2++;
 	return s1;
 }
+#endif
 
 //---------------------------------
 //void WriteToADF4350(unsigned char count,unsigned char *Reg_Buf);

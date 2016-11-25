@@ -126,6 +126,10 @@ void OnEditClicked_Ramp_Clk(WM_MESSAGE * pMsg)
 {
 }
 
+void __aeabi_memmove(void * a, const void * b, size_t s)
+{
+	memmove(a, b, s);
+}
 void System_Init(void)
 {
 	//初始化硬件模块
