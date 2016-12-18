@@ -7,6 +7,7 @@
 
 #include "stm32f10x.h"
 #include <math.h>
+#include <string.h>
 #include "user_Config.h"
 
 #define REF_CLK   25

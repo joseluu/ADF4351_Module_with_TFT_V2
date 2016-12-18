@@ -1,5 +1,5 @@
-/*==========================================================
-//	function:	ADF4530/51 ²ÊÆÁÄ£¿é
+ï»¿/*==========================================================
+//	function:	ADF4530/51 ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
 //	date:		2015/09/18
 //	E_Mail:		technicxie@126.com	
 ==========================================================*/
@@ -8,7 +8,7 @@
 #include "stm32f10x.h"
 #include <stdio.h>
 #include <string.h>
-#include "user_Config.h"                 //ÓÃ»§ÅäÖÃÍ·ÎÄ¼ş£¬ÓÃÓÚÅäÖÃÓ²¼şÁ¬½Ó×ÊÔ´,Î»ÓÚÏîÄ¿ÎÄ¼ş¼ĞÏÂ
+#include "user_Config.h"                 //ç”¨æˆ·é…ç½®å¤´æ–‡ä»¶ï¼Œç”¨äºé…ç½®ç¡¬ä»¶è¿æ¥èµ„æº,ä½äºé¡¹ç›®æ–‡ä»¶å¤¹ä¸‹
 #include "TFT28.h"											
 #include "TOUCH.h"											
 #include "lcd.h"
@@ -19,7 +19,7 @@
 
 void MainTask(void);
 
-unsigned int Device_code=0x9320;           	//TFT¿ØÖÆICĞÍºÅILI9328 0x9328 0x5408 0x1505
+unsigned int Device_code=0x9320;           	//TFTï¿½ï¿½ï¿½ï¿½ICï¿½Íºï¿½ILI9328 0x9328 0x5408 0x1505
 unsigned char Time_1S;					
 unsigned int System_Count;
 unsigned int XV,YV;
@@ -58,7 +58,7 @@ void OnButtonClicked_RF_OUT(WM_MESSAGE * pMsg)
 	n=temp;
 	n /= 1000;
 	RF_Fre_Value = n;
-	RF_OUT();//Êä³ö
+	RF_OUT();//ï¿½ï¿½ï¿½
 }
 
 void OnButtonClicked_Start_F(WM_MESSAGE * pMsg)
@@ -132,8 +132,8 @@ void __aeabi_memmove(void * a, const void * b, size_t s)
 }
 void System_Init(void)
 {
-	//³õÊ¼»¯Ó²¼şÄ£¿é
-	start_7843();                  //´ò¿ª´¥Ãş¹¦ÄÜ
+	//ï¿½ï¿½Ê¼ï¿½ï¿½Ó²ï¿½ï¿½Ä£ï¿½ï¿½
+	start_7843();                  //ï¿½ò¿ª´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	ADF4351_Init();
 
 }
@@ -158,7 +158,7 @@ int main(void)
 	
   while (1)
 	{
-		IWDG_ReloadCounter();	//Î¹¹·WDR();
+		IWDG_ReloadCounter();	//Î¹ï¿½ï¿½WDR();
   }
 }
 	 

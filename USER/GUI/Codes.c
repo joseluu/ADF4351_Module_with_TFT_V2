@@ -516,8 +516,8 @@ static void _cbCallback_Key(WM_MESSAGE * pMsg)
                     {
                         case WM_NOTIFICATION_CLICKED:
                             OnButtonClicked_Enter(pMsg);
-							Key_Return_Flag=1;
-							GUI_EndDialog(hWin, 0);
+			    Key_Return_Flag=1;
+			    GUI_EndDialog(hWin, 0);
                             break;
                     }
                     break;
@@ -526,8 +526,8 @@ static void _cbCallback_Key(WM_MESSAGE * pMsg)
                     {
                         case WM_NOTIFICATION_CLICKED:
                             OnButtonClicked_Back_Key(pMsg);
-							Key_Return_Flag=1;
-							GUI_EndDialog(hWin, 0);
+			    Key_Return_Flag=1;
+			    GUI_EndDialog(hWin, 0);
                             break;
                     }
                     break;
@@ -560,11 +560,11 @@ static void _cbCallback(WM_MESSAGE * pMsg)
     {
         case WM_PAINT:
             PaintDialog(pMsg);
-				        EDIT_SetDecMode(hEdit1_Item, Register_Buf[6],   100, 4400000, 0, 0);
-								EDIT_SetDecMode(hEdit2_Item, Register_Buf[7],   35, 4400, 0, 0);
-								EDIT_SetDecMode(hEdit3_Item, Register_Buf[8],   35, 4400, 0, 0);
-								EDIT_SetDecMode(hEdit4_Item, Register_Buf[9],   100, 50000, 0, 0);
-								EDIT_SetDecMode(hEdit5_Item, Register_Buf[10],   100, 100000, 0, 0);
+		EDIT_SetDecMode(hEdit1_Item, Register_Buf[6],   100, 4400000, 0, 0);
+		EDIT_SetDecMode(hEdit2_Item, Register_Buf[7],   35, 4400, 0, 0);
+		EDIT_SetDecMode(hEdit3_Item, Register_Buf[8],   35, 4400, 0, 0);
+		EDIT_SetDecMode(hEdit4_Item, Register_Buf[9],   100, 50000, 0, 0);
+		EDIT_SetDecMode(hEdit5_Item, Register_Buf[10],   100, 100000, 0, 0);
             break;
         case WM_INIT_DIALOG:
             InitDialog(pMsg);
@@ -583,17 +583,17 @@ static void _cbCallback(WM_MESSAGE * pMsg)
         case WM_NOTIFY_PARENT:
             Id = WM_GetId(pMsg->hWinSrc); 
             NCode = pMsg->Data.v;  
-						if(Key_Return_Flag)	
-						{
-							Key_Return_Flag=0;
-							EDIT_SetValue(hEdit1_Item, Register_Buf[6]);
-							EDIT_SetValue(hEdit2_Item, Register_Buf[7]);
-							EDIT_SetValue(hEdit3_Item, Register_Buf[8]);
-							EDIT_SetValue(hEdit4_Item, Register_Buf[9]);
-							EDIT_SetValue(hEdit5_Item, Register_Buf[10]);
-							Key_SW_Flag=1;
-							Register_Index=0;
-						}  
+		if(Key_Return_Flag)	
+		{
+			Key_Return_Flag=0;
+			EDIT_SetValue(hEdit1_Item, Register_Buf[6]);
+			EDIT_SetValue(hEdit2_Item, Register_Buf[7]);
+			EDIT_SetValue(hEdit3_Item, Register_Buf[8]);
+			EDIT_SetValue(hEdit4_Item, Register_Buf[9]);
+			EDIT_SetValue(hEdit5_Item, Register_Buf[10]);
+			Key_SW_Flag=1;
+			Register_Index=0;
+		}  
             switch (Id) 
             {
                 case GUI_ID_OK:
@@ -609,18 +609,18 @@ static void _cbCallback(WM_MESSAGE * pMsg)
                     {
                         case WM_NOTIFICATION_GOT_FOCUS:
                             OnEditClicked_RF_Out(pMsg);
-														if(Key_SW_Flag==0)
-														{
-																Key_SW_Flag=1;
-																Register_Index=1;//Freq0
-																hDlg = GUI_CreateDialogBox(_aDialogCreate_Key, GUI_COUNTOF(_aDialogCreate_Key), &_cbCallback_Key, WM_HBKWIN, 0, 0); 
-																WM_MakeModal(hDlg);
-																GUI_ExecCreatedDialog(hDlg);
-																WM_MakeModal(hWin);
-																WM_SetFocus(hWin);
-														}
-														else
-																Key_SW_Flag=0;												
+				if(Key_SW_Flag==0)
+				{
+					Key_SW_Flag=1;
+					Register_Index=1;//Freq0
+					hDlg = GUI_CreateDialogBox(_aDialogCreate_Key, GUI_COUNTOF(_aDialogCreate_Key), &_cbCallback_Key, WM_HBKWIN, 0, 0); 
+					WM_MakeModal(hDlg);
+					GUI_ExecCreatedDialog(hDlg);
+					WM_MakeModal(hWin);
+					WM_SetFocus(hWin);
+				}
+				else
+					Key_SW_Flag=0;												
                             break;
                     }
                     break;
@@ -685,18 +685,18 @@ static void _cbCallback(WM_MESSAGE * pMsg)
                     {
                         case WM_NOTIFICATION_GOT_FOCUS://case WM_NOTIFICATION_CLICKED:
                             OnEditClicked_Start_F(pMsg);
-														if(Key_SW_Flag==0)
-														{
-																Key_SW_Flag=2;
-																Register_Index=2;//Freq0
-																hDlg = GUI_CreateDialogBox(_aDialogCreate_Key, GUI_COUNTOF(_aDialogCreate_Key), &_cbCallback_Key, WM_HBKWIN, 0, 0); 
-																WM_MakeModal(hDlg);
-																GUI_ExecCreatedDialog(hDlg);
-																WM_MakeModal(hWin);
-																WM_SetFocus(hWin);
-														}
-														else
-																Key_SW_Flag=0;													
+				if(Key_SW_Flag==0)
+				{
+					Key_SW_Flag=2;
+					Register_Index=2;//Freq0
+					hDlg = GUI_CreateDialogBox(_aDialogCreate_Key, GUI_COUNTOF(_aDialogCreate_Key), &_cbCallback_Key, WM_HBKWIN, 0, 0); 
+					WM_MakeModal(hDlg);
+					GUI_ExecCreatedDialog(hDlg);
+					WM_MakeModal(hWin);
+					WM_SetFocus(hWin);
+				}
+				else
+					Key_SW_Flag=0;													
                             break;
                     }
                     break;
@@ -705,18 +705,18 @@ static void _cbCallback(WM_MESSAGE * pMsg)
                     {
                         case WM_NOTIFICATION_GOT_FOCUS://case WM_NOTIFICATION_CLICKED:
                             OnEditClicked_Stop_F(pMsg);
-														if(Key_SW_Flag==0)
-														{
-																Key_SW_Flag=3;
-																Register_Index=3;//Freq0
-																hDlg = GUI_CreateDialogBox(_aDialogCreate_Key, GUI_COUNTOF(_aDialogCreate_Key), &_cbCallback_Key, WM_HBKWIN, 0, 0); 
-																WM_MakeModal(hDlg);
-																GUI_ExecCreatedDialog(hDlg);
-																WM_MakeModal(hWin);
-																WM_SetFocus(hWin);
-														}
-														else
-																Key_SW_Flag=0;													
+				if(Key_SW_Flag==0)
+				{
+					Key_SW_Flag=3;
+					Register_Index=3;//Freq0
+					hDlg = GUI_CreateDialogBox(_aDialogCreate_Key, GUI_COUNTOF(_aDialogCreate_Key), &_cbCallback_Key, WM_HBKWIN, 0, 0); 
+					WM_MakeModal(hDlg);
+					GUI_ExecCreatedDialog(hDlg);
+					WM_MakeModal(hWin);
+					WM_SetFocus(hWin);
+				}
+				else
+					Key_SW_Flag=0;													
                             break;
                     }
                     break;
@@ -725,18 +725,18 @@ static void _cbCallback(WM_MESSAGE * pMsg)
                     {
                         case WM_NOTIFICATION_GOT_FOCUS://case WM_NOTIFICATION_CLICKED:
                             OnEditClicked_Delta_F(pMsg);
-														if(Key_SW_Flag==0)
-														{
-																Key_SW_Flag=4;
-																Register_Index=4;//Freq0
-																hDlg = GUI_CreateDialogBox(_aDialogCreate_Key, GUI_COUNTOF(_aDialogCreate_Key), &_cbCallback_Key, WM_HBKWIN, 0, 0); 
-																WM_MakeModal(hDlg);
-																GUI_ExecCreatedDialog(hDlg);
-																WM_MakeModal(hWin);
-																WM_SetFocus(hWin);
-														}
-														else
-																Key_SW_Flag=0;													
+				if(Key_SW_Flag==0)
+				{
+					Key_SW_Flag=4;
+					Register_Index=4;//Freq0
+					hDlg = GUI_CreateDialogBox(_aDialogCreate_Key, GUI_COUNTOF(_aDialogCreate_Key), &_cbCallback_Key, WM_HBKWIN, 0, 0); 
+					WM_MakeModal(hDlg);
+					GUI_ExecCreatedDialog(hDlg);
+					WM_MakeModal(hWin);
+					WM_SetFocus(hWin);
+				}
+				else
+					Key_SW_Flag=0;													
                             break;
                     }
                     break;
@@ -745,18 +745,18 @@ static void _cbCallback(WM_MESSAGE * pMsg)
                     {
                         case WM_NOTIFICATION_GOT_FOCUS://case WM_NOTIFICATION_CLICKED:
                             OnEditClicked_Ramp_Clk(pMsg);
-														if(Key_SW_Flag==0)
-														{
-																Key_SW_Flag=5;
-																Register_Index=5;//Freq0
-																hDlg = GUI_CreateDialogBox(_aDialogCreate_Key, GUI_COUNTOF(_aDialogCreate_Key), &_cbCallback_Key, WM_HBKWIN, 0, 0); 
-																WM_MakeModal(hDlg);
-																GUI_ExecCreatedDialog(hDlg);
-																WM_MakeModal(hWin);
-																WM_SetFocus(hWin);
-														}
-														else
-																Key_SW_Flag=0;	
+				if(Key_SW_Flag==0)
+				{
+					Key_SW_Flag=5;
+					Register_Index=5;//Freq0
+					hDlg = GUI_CreateDialogBox(_aDialogCreate_Key, GUI_COUNTOF(_aDialogCreate_Key), &_cbCallback_Key, WM_HBKWIN, 0, 0); 
+					WM_MakeModal(hDlg);
+					GUI_ExecCreatedDialog(hDlg);
+					WM_MakeModal(hWin);
+					WM_SetFocus(hWin);
+				}
+				else
+					Key_SW_Flag=0;	
                             break;
                     }
                     break;
