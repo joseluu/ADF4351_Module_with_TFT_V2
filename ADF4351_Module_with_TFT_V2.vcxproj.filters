@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{cb8fe428-660b-4646-a6fe-f1a2b0b4467a}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{546a3208-8070-47b3-a519-addab0e40e74}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{7302b0e5-8f1a-49d1-8323-349755fae7ec}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\Libraries">
+      <UniqueIdentifier>{66be73d3-12cb-4597-b807-f83d0724aa0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Libraries\CMSIS">
+      <UniqueIdentifier>{a69fd386-8082-49f9-a347-60f36155b676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Libraries\CMSIS\CM3">
+      <UniqueIdentifier>{94c3f21b-829c-4e94-8256-817ebbf564af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Libraries\CMSIS\CM3\CoreSupport">
+      <UniqueIdentifier>{c6bbb23b-9742-4ad2-95a6-c63a8c19aba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Libraries">
+      <UniqueIdentifier>{b609232c-d1de-491b-9686-b76fba1aa3c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Libraries\CMSIS">
+      <UniqueIdentifier>{1c86647b-bd52-4a97-9893-95162a64e439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Libraries\CMSIS\CM3">
+      <UniqueIdentifier>{e737d6ad-f66a-4988-ba58-3643f6cfc65b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Libraries\CMSIS\CM3\CoreSupport">
+      <UniqueIdentifier>{75ea242e-6656-4e65-a326-c46a8d9a55f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Libraries\CMSIS\CM3\DeviceSupport">
+      <UniqueIdentifier>{749110b2-3a7a-47db-8124-4e604a1f012d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Libraries\CMSIS\CM3\DeviceSupport\ST">
+      <UniqueIdentifier>{1a2ce7cc-a075-472e-ab58-2feaa0c9038d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x">
+      <UniqueIdentifier>{a8584818-d711-4a07-b024-925e60e58e54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Libraries\STM32F10x_StdPeriph_Driver">
+      <UniqueIdentifier>{3b783ede-96ae-46ae-a5b3-7cfe05116eb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Libraries\STM32F10x_StdPeriph_Driver\inc">
+      <UniqueIdentifier>{6cfda1a6-d25a-4b6a-8e47-bb1c2d2fc1e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Libraries\STM32F10x_StdPeriph_Driver">
+      <UniqueIdentifier>{c639090d-28d8-43ce-9441-51535e439863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Libraries\STM32F10x_StdPeriph_Driver\src">
+      <UniqueIdentifier>{16724bb8-e4de-4220-87f6-45170077dee0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\USER">
+      <UniqueIdentifier>{cae1fae7-8836-482d-a16a-4ab36882bfb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\USER">
+      <UniqueIdentifier>{9b77516d-6da3-4697-80be-3aa578e76d11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\USER\GUI">
+      <UniqueIdentifier>{12da6460-1a51-46f4-bc4a-1cfb66d0db06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\USER\GUI">
+      <UniqueIdentifier>{f9b9bdd5-ca43-4efc-adf9-46bc12388a58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\USER\GUI\Config">
+      <UniqueIdentifier>{328ab1da-f14f-45b0-b794-b9ff64dded50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\USER\GUI\GUI_inc">
+      <UniqueIdentifier>{ae040762-59c6-48d1-affe-5e4953f9960f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{11f716a2-77d1-4085-860a-f6ccc7c41425}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{16f45407-83e2-4811-9d82-e13dcbc4b439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{5aa97a71-cbc7-4a9f-bcbc-11a15e43ce2b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Libraries\CMSIS\CM3\CoreSupport\core_cm3.c">
+      <Filter>Source files\Libraries\CMSIS\CM3\CoreSupport</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\misc.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_bkp.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_can.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_cec.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_crc.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dac.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dbgmcu.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c">
+      <Filter>Source files\Libraries\STM32F10x_StdPeriph_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="USER\main.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="USER\stm32f10x_it.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="USER\system_stm32f10x.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="USER\GUI\Codes.c">
+      <Filter>Source files\USER\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="USER\GUI\Events_Key.c">
+      <Filter>Source files\USER\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jluu\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\StartupFiles\startup_stm32f103xb.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="USER\ADF4350_V1.c">
+      <Filter>Source files\USER</Filter>
+    </ClCompile>
+    <ClCompile Include="USER\GUI\Config\GUIConf.c">
+      <Filter>Source files\USER\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="USER\HD_Init.c">
+      <Filter>Source files\USER\GUI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Libraries\CMSIS\CM3\CoreSupport\core_cm3.h">
+      <Filter>Header files\Libraries\CMSIS\CM3\CoreSupport</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h">
+      <Filter>Header files\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h">
+      <Filter>Header files\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h">
+      <Filter>Header files\Libraries\STM32F10x_StdPeriph_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\ADF4350_V1.h">
+      <Filter>Header files\USER</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\stm32f10x_conf.h">
+      <Filter>Header files\USER</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\stm32f10x_it.h">
+      <Filter>Header files\USER</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\user_Config.h">
+      <Filter>Header files\USER</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\user_Config1.h">
+      <Filter>Header files\USER</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\TFT28.h">
+      <Filter>Header files\USER\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\Config\GUIConf.h">
+      <Filter>Header files\USER\GUI\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\Config\GUITouchConf.h">
+      <Filter>Header files\USER\GUI\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\Config\LCDConf.h">
+      <Filter>Header files\USER\GUI\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\BUTTON.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\BUTTON_Private.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\CHECKBOX.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\CHECKBOX_Private.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\DIALOG.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\DIALOG_Intern.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\DROPDOWN.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\DROPDOWN_Private.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\EDIT.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\EDIT_Private.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\FRAMEWIN.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\FRAMEWIN_Private.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\GUI.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\GUIDebug.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\GUIType.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\GUIVersion.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\GUI_ARRAY.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\GUI_ConfDefaults.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\GUI_FontIntern.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\GUI_HOOK.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\GUI_Private.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\GUI_Protected.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\GUI_VNC.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\GUI_X.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\HEADER.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\HEADER_Private.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\jconfig.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\jdct.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\jdhuff.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\jerror.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\jinclude.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\jmemsys.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\jmorecfg.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\jpegint.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\jpeglib.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\jversion.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\LCD.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\LCDSIM.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\LCD_ConfDefaults.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\LCD_IncludeDriver.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\LCD_Private.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\LCD_Protected.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\LISTBOX.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\LISTBOX_Private.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\LISTVIEW.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\LISTVIEW_Private.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\MENU.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\MENU_Private.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\MESSAGEBOX.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\MULTIEDIT.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\MULTIPAGE.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\MULTIPAGE_Private.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\PROGBAR.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\RADIO.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\RADIO_Private.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\SCROLLBAR.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\SCROLLBAR_Private.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\SLIDER.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\TEXT.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\TEXT_Private.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\WIDGET.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\WINDOW_Private.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\WM.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\WM_GUI.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\WM_Intern.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\GUI_inc\WM_Intern_ConfDep.h">
+      <Filter>Header files\USER\GUI\GUI_inc</Filter>
+    </ClInclude>
+    <ClInclude Include="USER\GUI\Touch.h">
+      <Filter>Header files\USER\GUI\Config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="stm32.mak">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
