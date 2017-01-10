@@ -1,0 +1,15 @@
+CodeDB
+Debug/
+Release/
+Src/Backup
+Inc/Backup
+MDK-ARM/
+VisualGDBCache
+ADF4351_Module_with_TFT_V2.sdf
+*~
+*.crf
+notepad_pp/
+obj/
+.vs/
+
+
