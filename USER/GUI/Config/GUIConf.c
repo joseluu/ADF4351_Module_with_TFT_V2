@@ -24,7 +24,7 @@ conditions  of  the   End  User  License  supplied  with  the  MDK-ARM
 Professional. 
 Full source code is available at: www.segger.com
 
-We appreciate your understanding and fairness.
+We appreciate your understanding and fairness. 
 ----------------------------------------------------------------------
 Licensing information
 
